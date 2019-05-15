@@ -1,8 +1,3 @@
-(* Mei Deanna Liu *)
-(* CSE 307 Section 02 *)
-(* Assignment #2 *)
-(* 111041152 *)
-
 fun matchUserRoles (u, []) = []
     | matchUserRoles (u, (x,y)::tail) = if u=x then y :: matchUserRoles (u,tail) else matchUserRoles (u,tail); 
 fun test([], [], [], []) = []
